@@ -1,23 +1,21 @@
 # Artifact: Union Types with Disjoint Switches
 
-Title of the submitted paper: Union Types with Disjoint Switches
-
-ECOOP submission number for the paper: 69
+Title of the ECOOP 2022 paper: Union Types with Disjoint Switches
 
 ## Overview: What does the artifact comprise?
 
-This artifact contains the mechanical formalization of the calculi 
+This artifact contains the mechanical formalization of the calculi
 associated with the paper Union Types with Disjoint Switches.
-All the metatheory has been formalized in Coq theorem prover.
+All of the metatheory has been formalized in Coq theorem prover.
 We provide a docker image as well the code archive.
 
 We claim the functional, reusable, and available badges.
 
 ## For authors claiming a functional or reusable badge: What are claims about the artifact’s functionality to be evaluated by the committee?
 
-All the the metatheory and theorems stated in paper can be found in the artifact.
+All of the metatheory and theorems stated in paper can be found in the artifact.
 
-**Note:** Please follow the steps under *Getting Started* to 
+**Note:** Please follow the steps under *Getting Started* to
 access the artifact and look into the directory hierarchy.
 
 ### Code Structure:
@@ -38,6 +36,8 @@ Organization of folders is:
 | section51  | An extension with parametric polymorphism    | Discussed in section 5.1 |
 | section52  | An extension with generalized subtyping      | Discussed in section 5.2 |
 
+**Note:** Note that section 5 in extended version of the paper
+corresponds to appendix A in ECOOP 2022 publication.
 
 #### section3
 1. syntax.v contains syntax and disjointness properties of the union calculus.
@@ -79,6 +79,9 @@ reference in *section 4* in the paper:
 | Theorem 22       | typing.v       | progress                             |
 | Theorem 23       | typing.v       | determinism                          |
 
+
+**Note:** Note that section 5 in extended version of the paper
+corresponds to appendix A in ECOOP 2022 publication.
 
 #### section51
 1. syntax.v contains syntax and disjointness properties of the
@@ -145,8 +148,8 @@ We provide a docker image with all the dependencies installed in it.
 This section explains how to pull the docker image of artifact from docker repo and use it.
 Run the following commands one by one in terminal:
 
-1. `$ docker pull anoms/switches`
-2. `$ docker run -it anoms/switches`
+1. `$ docker pull baberrehman/switches`
+2. `$ docker run -it baberrehman/switches`
 
 
 **Note:** Please note that **$** symbol appearing in
@@ -176,10 +179,8 @@ Go to each folder and run make:
 1. `$ cd /home/coq/code/section4`
 2. `$ make`
 
-
 Note that compilation of equivalence.v takes a few minutes
 to complete.
-
 
 ### section51
 
@@ -193,7 +194,7 @@ to complete.
 
 Please feel free to go through the code in each section.
 **vim** and **cat** commands are available to look into the files.
-Recommended way to look into the files is by downloading the 
+Recommended way to look into the files is by downloading the
 code archive from the given git repo.
 
 This completes the evaluation of artifact following docker image.
@@ -228,14 +229,15 @@ Please refer to this link for detailed compilation and installation of Coq TLC:
 https://github.com/charguer/tlc/tree/20210316
 
 Metatheory can be installed by following the instructions at this link:
-https://github.com/plclub/metalib
+https://github.com/plclub/metalib. Metatheory library from branch
+**coq8.10** must be installed.
 
 
 ### Getting the files
 Use the following commands to clone our git repo.
 Please note that **$** symbol is not a part of command:
 
-`$ git clone https://github.com/anomsresearch/disjoint-switches.git`
+`$ git clone https://github.com/baberrehman/disjoint-switches.git`
 
 You should be able to see all the Coq files inside folder *code*
 after cloning the repo. Alternatively you can download the zip file

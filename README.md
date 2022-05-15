@@ -253,7 +253,7 @@ There are 4 sub-folders in the *code* folder, with make file in each.
 **Note:** Please make sure to run `$ eval $(opam env)` if Coq
 is installed using opam. This command can be skipped otherwise.
 
-Open the terminal in each each folder and run make:
+Open the terminal in each folder and run make:
 
 ### section3
 
